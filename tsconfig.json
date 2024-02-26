@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "rootDir": "./",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "declaration": true,
+    "esModuleInterop": true,
+    "outDir": "./",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@configurations": ["./src/configurations"],
+      "@configurations/*": ["./src/configurations/*"],
+      "@controllers": ["./src/controllers"],
+      "@controllers/*": ["./src/controllers/*"],
+      "@enums": ["./src/enums"],
+      "@enums/*": ["./src/enums/*"],
+      "@middleware": ["./src/middleware"],
+      "@middleware/*": ["./src/middleware/*"],
+      "@routes": ["./src/routes"],
+      "@routes/*": ["./src/routes/*"],
+      "@services": ["./src/services"],
+      "@services/*": ["./src/services/*"],
+      "@types": ["./src/types"],
+      "@types/*": ["./src/types/*"],
+      "@utils": ["./src/utils"],
+      "@utils/*": ["./src/utils/*"],
+    }
+  },
+  "exclude":[
+    "./node_modules"
+  ]
+}
