@@ -28,6 +28,8 @@
       "@types/*": ["./src/types/*"],
       "@utils": ["./src/utils"],
       "@utils/*": ["./src/utils/*"],
+      "@cron": ["./src/cron"],
+      "@cron/*": ["./src/cron/*"]
     }
   },
   "exclude":[

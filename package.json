@@ -24,6 +24,7 @@
     "firebase": "^10.8.0",
     "jsonwebtoken": "^9.0.2",
     "module-alias": "^2.2.3",
+    "mongodb": "^6.3.0",
     "morgan": "^1.10.0",
     "node-shikimori": "^2.0.1",
     "prettier": "^3.2.5",
@@ -43,7 +44,8 @@
     "@routes": "./src/routes",
     "@services": "./src/services",
     "@types": "./src/types",
-    "@utils": "./src/utils"
+    "@utils": "./src/utils",
+    "@cron": "./src/cron"
   },
   "devDependencies": {
     "@types/module-alias": "^2.0.4",

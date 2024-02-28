@@ -1,3 +1,4 @@
 export enum ApiEnum {
-    COMMON = "/common/api",
+  COMMON = "/common/api",
+  NEWS = "/news",
 }

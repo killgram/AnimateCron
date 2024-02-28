@@ -1,0 +1,1 @@
+export * as NewsService from './news'

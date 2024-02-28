@@ -1,3 +1,4 @@
 import * as CommonControllers from "./common";
+import * as NewsControllers from "./news";
 
-export {CommonControllers}
+export { CommonControllers, NewsControllers };
