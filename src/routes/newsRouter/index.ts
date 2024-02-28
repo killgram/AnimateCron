@@ -7,4 +7,10 @@ const router: Router = express.Router();
 
 router.get(NewsRoutesEnum.CHECK, guardMiddleware, NewsControllers.checkNews);
 
+router.delete(
+  NewsRoutesEnum.DELETE,
+  guardMiddleware,
+  NewsControllers.deleteNews,
+);
+
 export { router as NewsRouter };
