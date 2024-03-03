@@ -9,6 +9,9 @@ declare global {
       SH_MAX_CALLS_PER_MINUTE: string;
       SH_IMAGE_SOURCE: string;
       MONGODB_URL: string;
+      AL_DOMAIN: string;
+      AL_IMAGE_SOURCE: string;
+      YOUTUBE_LINK: string;
     }
   }
 }

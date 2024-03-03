@@ -1,18 +1,22 @@
-import { getSHNews } from "./sh";
 import { Request, Response } from "express";
-import { NewsSource } from "@enums";
+import { checkList } from "./list";
 
-const checkNews = async (req?: Request, res?: Response): Promise<void> => {
-  const shNews = await getSHNews();
+const checkNews = async (_?: Request, res?: Response): Promise<void> => {
+  const result: {
+    name: string;
+    status: boolean;
+  }[] = [];
 
-  const checkList = [];
-  checkList.push({
-    name: NewsSource.SH,
-    result: shNews,
-  });
+  for (let i = 0; i < checkList.length; i++) {
+    const status = await checkList[i].logicFunction?.();
+    result.push({
+      name: checkList[i].name,
+      status: status,
+    });
+  }
 
   res?.status(200).json({
-    checkList: checkList,
+    checkList: result,
     success: true,
   });
 };
