@@ -1,7 +1,10 @@
 import { Request, Response } from "express";
 import { deleteList } from "./list";
+import { cronWorkLogger, NewsCronResults } from "@utils";
 
 const deleteNews = async (_?: Request, res?: Response): Promise<void> => {
+  cronWorkLogger(NewsCronResults.START_DELETING);
+
   const result: {
     name: string;
     status: boolean;
@@ -14,6 +17,8 @@ const deleteNews = async (_?: Request, res?: Response): Promise<void> => {
       status: status,
     });
   }
+
+  cronWorkLogger(NewsCronResults.FINISH_DELETING);
 
   res?.status(200).json({
     deleteList: result,
