@@ -8,8 +8,8 @@ export const deleteList = [
     name: NewsSource.SH,
     logicFunction: deleteSHNews,
   },
-  {
-    name: NewsSource.AL,
-    logicFunction: deleteALNews,
-  },
+  // {
+  //   name: NewsSource.AL,
+  //   logicFunction: deleteALNews,
+  // },
 ];

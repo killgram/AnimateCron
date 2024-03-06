@@ -8,8 +8,8 @@ export const checkList = [
     name: NewsSource.SH,
     logicFunction: getSHNews,
   },
-  {
-    name: NewsSource.AL,
-    logicFunction: getALNews,
-  },
+  // {
+  //   name: NewsSource.AL,
+  //   logicFunction: getALNews,
+  // },
 ];
